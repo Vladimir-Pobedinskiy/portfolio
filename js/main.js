@@ -95,13 +95,6 @@ window.addEventListener('resize', () => {
   changeHeight();
 });
 
-var root = document.documentElement;
-if (
-    window.innerWidth > window.innerHeight ||
-    Math.abs(this.lastHeight - window.innerHeight) > 100
-) {
-    root.style.setProperty(`--window-vh`, window.innerHeight + 'px');
-    this.lastHeight = window.innerHeight;
-}
+
 
 
