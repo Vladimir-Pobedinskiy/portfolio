@@ -83,17 +83,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-//подстраивание высоты под телефон(vh)
-const changeHeight = () => {
-  let vh = window.innerHeight;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-};
-
-changeHeight();
-
-window.addEventListener('resize', () => {
-  changeHeight();
-});
 
 
 
