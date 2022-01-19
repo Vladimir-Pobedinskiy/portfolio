@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   color: #333333;
@@ -84,6 +78,7 @@ body {
 .header {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -95,6 +90,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh));
   z-index: 1;
 
 }
@@ -206,12 +202,14 @@ body {
 
 .header__content {
   height: 100vh;
+  height: calc(var(--vh, 1vh));
 }
 
 
 .header__content-inner {
   height: 100vh;
-  max-height: calc(100vh - 93px);
+  max-height: calc(100vh - 98px);
+  height: calc((var(--vh, 1vh)) - 98px);
   display: flex;
   flex-direction: column;
 }

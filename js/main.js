@@ -72,7 +72,7 @@ const contentHeight = content.offsetHeight;
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
 
-	 if (scrollDistance >= contentHeight + headerHeight-70) {
+	 if (scrollDistance >= contentHeight + headerHeight-50) {
 	 	header.classList.add('header--fixed');
 	 	content.style.marginTop = `${headerHeight}px`;
 	 } else {
@@ -82,5 +82,26 @@ window.addEventListener('scroll', () => {
 
 });
 
+
+//подстраивание высоты под телефон(vh)
+const changeHeight = () => {
+  let vh = window.innerHeight;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+};
+
+changeHeight();
+
+window.addEventListener('resize', () => {
+  changeHeight();
+});
+
+var root = document.documentElement;
+if (
+    window.innerWidth > window.innerHeight ||
+    Math.abs(this.lastHeight - window.innerHeight) > 100
+) {
+    root.style.setProperty(`--window-vh`, window.innerHeight + 'px');
+    this.lastHeight = window.innerHeight;
+}
 
 
