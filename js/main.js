@@ -64,23 +64,7 @@ var cleave = new Cleave('.tel', {
 
 //фиксированная шапка со второго блока
 
-const header = document.querySelector('.header__fix');
-const content = document.querySelector('.header__content');
-const headerHeight = header.offsetHeight;
-const contentHeight = content.offsetHeight;
 
-window.addEventListener('scroll', () => {
-	let scrollDistance = window.scrollY;
-
-	 if (scrollDistance >= contentHeight + headerHeight-50) {
-	 	header.classList.add('header--fixed');
-	 	content.style.marginTop = `${headerHeight}px`;
-	 } else {
-	 	header.classList.remove('header--fixed');
-	 	content.style.marginTop = null;
-	 }
-
-});
 
 
 //подстраивание высоты под телефон(vh)
