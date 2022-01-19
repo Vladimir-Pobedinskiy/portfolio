@@ -205,7 +205,7 @@ body {
 
 .header__content-inner {
   height: 100vh;
-  max-height: calc(100vh - 98px);
+  max-height: calc(100vh - 110px);
   display: flex;
   flex-direction: column;
 }

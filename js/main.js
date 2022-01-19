@@ -72,7 +72,7 @@ const contentHeight = content.offsetHeight;
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
 
-	 if (scrollDistance >= contentHeight + headerHeight-50) {
+	 if (scrollDistance >= contentHeight + headerHeight-70) {
 	 	header.classList.add('header--fixed');
 	 	content.style.marginTop = `${headerHeight}px`;
 	 } else {
