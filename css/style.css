@@ -209,7 +209,7 @@ body {
 
 .header__content-inner {
   height: 100vh;
-  max-height: calc(100vh - 128px);
+  max-height: calc((var(--vh) * 100) - 128px);
   display: flex;
   flex-direction: column;
 }
