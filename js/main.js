@@ -82,6 +82,19 @@ window.addEventListener('scroll', () => {
 
 });
 
+// подстраивание под 100vh
+const changeHeight = () => {
+  let vh = window.innerHeight;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+  
+  changeHeight();
+  
+  window.addEventListener('resize', () => {
+  changeHeight();
+  });
+
+
 
 
 
